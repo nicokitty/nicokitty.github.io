@@ -6,27 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Niuxiangqian&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Handler学习[TOC]
-什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
+  <meta name="description" content="Handler学习
+title: Handler什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
 其实是Framework，比如Activity生命周期，查看Framework的源码会发现是通过Handler机制发送消息的，然后根据不同的Message作出相应的分支处理。
-为什么要用Handler？12Android在设计">
+为什么要用Handler？12A">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Niuxiangqian's blog">
 <meta property="og:url" content="http://www.niuxiangqian.com/2016/03/21/handler/index.html">
 <meta property="og:site_name" content="Niuxiangqian's blog">
-<meta property="og:description" content="Handler学习[TOC]
-什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
+<meta property="og:description" content="Handler学习
+title: Handler什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
 其实是Framework，比如Activity生命周期，查看Framework的源码会发现是通过Handler机制发送消息的，然后根据不同的Message作出相应的分支处理。
-为什么要用Handler？12Android在设计">
+为什么要用Handler？12A">
 <meta property="og:image" content="http://www.niuxiangqian.com/media/14579160226950/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-14%20%E4%B8%8A%E5%8D%889.58.46.png">
 <meta property="og:image" content="http://www.niuxiangqian.com/media/14579160226950/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-14%20%E4%B8%8A%E5%8D%8810.07.56.png">
-<meta property="og:updated_time" content="2016-03-21T08:49:41.000Z">
+<meta property="og:updated_time" content="2016-03-21T08:52:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Niuxiangqian's blog">
-<meta name="twitter:description" content="Handler学习[TOC]
-什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
+<meta name="twitter:description" content="Handler学习
+title: Handler什么是Handler？12handler是android给我们提供用来更新UI的一套机制，也是一套消息处理的机制，我们可以发送消息、处理消息。
 其实是Framework，比如Activity生命周期，查看Framework的源码会发现是通过Handler机制发送消息的，然后根据不同的Message作出相应的分支处理。
-为什么要用Handler？12Android在设计">
+为什么要用Handler？12A">
 <meta name="twitter:image" content="http://www.niuxiangqian.com/media/14579160226950/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-14%20%E4%B8%8A%E5%8D%889.58.46.png">
   
     <link rel="alternative" href="/atom.xml" title="Niuxiangqian&#39;s blog" type="application/atom+xml">
@@ -92,7 +92,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -228,8 +228,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Handler学习"><a href="#Handler学习" class="headerlink" title="Handler学习"></a>Handler学习</h1><p>[TOC]</p>
-<h2 id="什么是Handler？"><a href="#什么是Handler？" class="headerlink" title="什么是Handler？"></a>什么是Handler？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">handler是android给我们提供用来更新UI的一套机制，</span><br><span class="line">也是一套消息处理的机制，我们可以发送消息、处理消息。</span><br></pre></td></tr></table></figure>
+        <h1 id="Handler学习"><a href="#Handler学习" class="headerlink" title="Handler学习"></a>Handler学习</h1><hr>
+<h2 id="title-Handler"><a href="#title-Handler" class="headerlink" title="title: Handler"></a>title: Handler</h2><h2 id="什么是Handler？"><a href="#什么是Handler？" class="headerlink" title="什么是Handler？"></a>什么是Handler？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">handler是android给我们提供用来更新UI的一套机制，</span><br><span class="line">也是一套消息处理的机制，我们可以发送消息、处理消息。</span><br></pre></td></tr></table></figure>
 <p>其实是<code>Framework</code>，比如<code>Activity生命周期</code>，<em>查看Framework的源码会发现是通过Handler机制发送消息的，然后根据不同的Message作出相应的分支处理。</em></p>
 <h2 id="为什么要用Handler？"><a href="#为什么要用Handler？" class="headerlink" title="为什么要用Handler？"></a>为什么要用Handler？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Android在设计的时候，就封装了一套消息创建、传播、处理机制，</span><br><span class="line">如果不遵循这样的机制就没有办法更新UI信息的，就会跑出异常消息。</span><br></pre></td></tr></table></figure>
 <h2 id="Handler怎么用？"><a href="#Handler怎么用？" class="headerlink" title="Handler怎么用？"></a>Handler怎么用？</h2><ul>
