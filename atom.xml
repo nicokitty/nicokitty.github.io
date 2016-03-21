@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.niuxiangqian.com/"/>
-  <updated>2016-03-21T08:48:22.000Z</updated>
+  <updated>2016-03-21T08:49:41.000Z</updated>
   <id>http://www.niuxiangqian.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.niuxiangqian.com/2016/03/21/handler/"/>
     <id>http://www.niuxiangqian.com/2016/03/21/handler/</id>
     <published>2016-03-21T08:44:18.000Z</published>
-    <updated>2016-03-21T08:48:22.000Z</updated>
+    <updated>2016-03-21T08:49:41.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2 id=&quot;什么是Handler？&quot;&gt;&lt;a href=&quot;#什么是Handler？&quot; class=&quot;headerlink&quot; title=&quot;什么是Handler？&quot;&gt;&lt;/a&gt;什么是Handler？&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;handler是android给我们提供用来更新UI的一套机制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;也是一套消息处理的机制，我们可以发送消息、处理消息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -40,8 +40,7 @@
 &lt;p&gt;然后在Thread里&lt;/p&gt;
 &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Message message = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Message();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;message.arg1 = &lt;span class=&quot;number&quot;&gt;88&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;handler.sendMessage(message)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;这样就可以在UI里（更新UI的知识）把发送（发送消息的知识）的数字显示出来。&lt;/p&gt;
-&lt;p&gt;##Handler  Looper  MessageQueue&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&quot;Handler-Looper-MessageQueue&quot;&gt;&lt;a href=&quot;#Handler-Looper-MessageQueue&quot; class=&quot;headerlink&quot; title=&quot;Handler  Looper  MessageQueue&quot;&gt;&lt;/a&gt;Handler  Looper  MessageQueue&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Handler负责发送消息&lt;br&gt;Looper负责接收Handler发送的消息，并直接发消息回传给handler自己&lt;br&gt;MessageQueue就是一个存储消息的容器&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>

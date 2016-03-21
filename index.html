@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -235,8 +235,7 @@
 <p>然后在Thread里</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Message message = <span class="keyword">new</span> Message();</span><br><span class="line">message.arg1 = <span class="number">88</span>;</span><br><span class="line">handler.sendMessage(message)</span><br></pre></td></tr></table></figure>
 <p>这样就可以在UI里（更新UI的知识）把发送（发送消息的知识）的数字显示出来。</p>
-<p>##Handler  Looper  MessageQueue</p>
-<blockquote>
+<h2 id="Handler-Looper-MessageQueue"><a href="#Handler-Looper-MessageQueue" class="headerlink" title="Handler  Looper  MessageQueue"></a>Handler  Looper  MessageQueue</h2><blockquote>
 <p>Handler负责发送消息<br>Looper负责接收Handler发送的消息，并直接发消息回传给handler自己<br>MessageQueue就是一个存储消息的容器</p>
 </blockquote>
 
