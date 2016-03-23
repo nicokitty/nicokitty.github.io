@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.niuxiangqian.com/"/>
-  <updated>2016-03-21T08:53:27.000Z</updated>
+  <updated>2016-03-23T05:51:21.000Z</updated>
   <id>http://www.niuxiangqian.com/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://www.niuxiangqian.com/2016/03/21/handler/"/>
     <id>http://www.niuxiangqian.com/2016/03/21/handler/</id>
     <published>2016-03-21T08:44:18.000Z</published>
-    <updated>2016-03-21T08:53:27.000Z</updated>
+    <updated>2016-03-23T05:51:21.000Z</updated>
     
-    <content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;什么是Handler？&quot;&gt;&lt;a href=&quot;#什么是Handler？&quot; class=&quot;headerlink&quot; title=&quot;什么是Handler？&quot;&gt;&lt;/a&gt;什么是Handler？&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;handler是android给我们提供用来更新UI的一套机制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;也是一套消息处理的机制，我们可以发送消息、处理消息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    <content type="html">&lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;什么是Handler？&quot;&gt;&lt;a href=&quot;#什么是Handler？&quot; class=&quot;headerlink&quot; title=&quot;什么是Handler？&quot;&gt;&lt;/a&gt;什么是Handler？&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;handler是android给我们提供用来更新UI的一套机制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;也是一套消息处理的机制，我们可以发送消息、处理消息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;其实是&lt;code&gt;Framework&lt;/code&gt;，比如&lt;code&gt;Activity生命周期&lt;/code&gt;，&lt;em&gt;查看Framework的源码会发现是通过Handler机制发送消息的，然后根据不同的Message作出相应的分支处理。&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&quot;为什么要用Handler？&quot;&gt;&lt;a href=&quot;#为什么要用Handler？&quot; class=&quot;headerlink&quot; title=&quot;为什么要用Handler？&quot;&gt;&lt;/a&gt;为什么要用Handler？&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Android在设计的时候，就封装了一套消息创建、传播、处理机制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;如果不遵循这样的机制就没有办法更新UI信息的，就会跑出异常消息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;Handler怎么用？&quot;&gt;&lt;a href=&quot;#Handler怎么用？&quot; class=&quot;headerlink&quot; title=&quot;Handler怎么用？&quot;&gt;&lt;/a&gt;Handler怎么用？&lt;/h2&gt;&lt;ul&gt;
@@ -47,8 +46,43 @@
     
     <summary type="html">
     
-      &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;什么是Handler？&quot;&gt;&lt;a href=&quot;#什
+      &lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;什么是Handler？&quot;&gt;&lt;a href=&quot;#什么是Handler？&quot; c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Handler</title>
+    <link href="http://www.niuxiangqian.com/2016/03/21/handleree/"/>
+    <id>http://www.niuxiangqian.com/2016/03/21/handleree/</id>
+    <published>2016-03-21T08:44:18.000Z</published>
+    <updated>2016-03-23T05:53:56.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;为什么要用Handler？&quot;&gt;&lt;a href=&quot;#为什么要用Handler？&quot; class=&quot;headerlink&quot; title=&quot;为什么要用Handler？&quot;&gt;&lt;/a&gt;为什么要用Handler？&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Android在设计的时候，就封装了一套消息创建、传播、处理机制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;如果不遵循这样的机制就没有办法更新UI信息的，就会跑出异常消息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Handler怎么用？&quot;&gt;&lt;a href=&quot;#Handler怎么用？&quot; class=&quot;headerlink&quot; title=&quot;Handler怎么用？&quot;&gt;&lt;/a&gt;Handler怎么用？&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;sendMessage&lt;/li&gt;
+&lt;li&gt;sendMessageDelayed&lt;/li&gt;
+&lt;li&gt;post(Runnable)&lt;/li&gt;
+&lt;li&gt;postDelayed(Runnable,long)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不使用Handler时，直接new一个Thread执行run方法，程序是无法通过。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;media/14579160226950/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-14%20%E4%B8%8A%E5%8D%889.58.46.png&quot; alt=&quot;屏幕快照 2016-03-14 上午9.58.46&quot;&gt;&lt;/p&gt;
+&lt;p&gt;使用Handler可以解决&lt;br&gt;&lt;img src=&quot;media/14579160226950/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-14%20%E4%B8%8A%E5%8D%8810.07.56.png&quot; alt=&quot;屏幕快照 2016-03-14 上午10.07.56&quot;&gt;&lt;br&gt;这里用的是handler的&lt;code&gt;post(Runnable)&lt;/code&gt;方法。&lt;/p&gt;
+&lt;p&gt;看看发送消息的例子：&lt;br&gt;首先，&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Handler handler = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Handler()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;handleMessage&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(android.os.Messgae msg)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	textView.setText(&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;+msg.arg1+&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后在Thread里&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Message message = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Message();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;message.arg1 = &lt;span class=&quot;number&quot;&gt;88&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;handler.sendMessage(message)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样就可以在UI里（更新UI的知识）把发送（发送消息的知识）的数字显示出来。&lt;/p&gt;
+&lt;h2 id=&quot;Handler-Looper-MessageQueue&quot;&gt;&lt;a href=&quot;#Handler-Looper-MessageQueue&quot; class=&quot;headerlink&quot; title=&quot;Handler  Looper  MessageQueue&quot;&gt;&lt;/a&gt;Handler  Looper  MessageQueue&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Handler负责发送消息&lt;br&gt;Looper负责接收Handler发送的消息，并直接发消息回传给handler自己&lt;br&gt;MessageQueue就是一个存储消息的容器&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Handler学习&quot;&gt;&lt;a href=&quot;#Handler学习&quot; class=&quot;headerlink&quot; title=&quot;Handler学习&quot;&gt;&lt;/a&gt;Handler学习&lt;/h1&gt;&lt;h2 id=&quot;为什么要用Handler？&quot;&gt;&lt;a href=&quot;#为什么要用Handler
     
     </summary>
     
